@@ -16,7 +16,7 @@ int main()
             s[i]+=" ";
         }
     }
-    vector<string> vec_name;
+    vector<string> vec_name; // stores the var name in vector
 
     vector<vector<int>> envi; //example environment for int
     for(int i=0;i<n;i++)
@@ -58,7 +58,7 @@ int main()
         }
 
         vec_name.push_back(var_name);
-        if(envi.empty())
+        if(envi.empty()) // adds new variable to the existing environment
         {
             for(int i=0;i<numbers.size();i++)envi.push_back({numbers[i]});
         }
